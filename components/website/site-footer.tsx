@@ -39,7 +39,12 @@ export function SiteFooter() {
                     </div>
                 </div>
                 <div className="border-t border-slate-900 pt-8 text-sm text-center md:text-left flex flex-col md:flex-row justify-between items-center">
-                    <p>&copy; {new Date().getFullYear()} Ampah Prah Mortuary. All rights reserved.</p>
+                    <p>
+                        &copy; {new Date().getFullYear()} Ampah Prah Mortuary. All rights reserved. Powered by{" "}
+                        <a href="https://doctorbarns.com" target="_blank" rel="noopener" className="hover:underline">
+                            Doctor Barns Tech
+                        </a>
+                    </p>
                 </div>
             </div>
         </footer>
