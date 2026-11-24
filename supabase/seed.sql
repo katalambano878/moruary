@@ -5,7 +5,7 @@
 -- 
 -- DEFAULT LOGIN CREDENTIALS:
 -- Email: admin@mortuary.com
--- Password: Admin@123
+-- Password: replace the CHANGE_ME values below before running; never commit real passwords
 -- =============================================
 
 -- Step 1: Create Default Branches
@@ -38,7 +38,7 @@ INSERT INTO auth.users (
   'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa',
   '00000000-0000-0000-0000-000000000000',
   'admin@mortuary.com',
-  crypt('Admin@123', gen_salt('bf')),
+  crypt('CHANGE_ME_1', gen_salt('bf')),
   NOW(),
   NOW(),
   NOW(),
@@ -95,7 +95,7 @@ INSERT INTO auth.users (
   'bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb',
   '00000000-0000-0000-0000-000000000000',
   'staff@mortuary.com',
-  crypt('Staff@123', gen_salt('bf')),
+  crypt('CHANGE_ME_2', gen_salt('bf')),
   NOW(),
   NOW(),
   NOW(),
@@ -137,7 +137,7 @@ INSERT INTO auth.users (
   'cccccccc-cccc-cccc-cccc-cccccccccccc',
   '00000000-0000-0000-0000-000000000000',
   'asuom.staff@amprahmortuary.com',
-  crypt('AsuomStaff@2026', gen_salt('bf')),
+  crypt('CHANGE_ME_3', gen_salt('bf')),
   NOW(), NOW(), NOW(),
   '{"provider": "email", "providers": ["email"]}',
   '{"full_name": "Asuom Staff"}',
@@ -162,7 +162,7 @@ INSERT INTO auth.users (
   'dddddddd-dddd-dddd-dddd-dddddddddddd',
   '00000000-0000-0000-0000-000000000000',
   'asanteman.staff@amprahmortuary.com',
-  crypt('AsantemanStaff@2026', gen_salt('bf')),
+  crypt('CHANGE_ME_4', gen_salt('bf')),
   NOW(), NOW(), NOW(),
   '{"provider": "email", "providers": ["email"]}',
   '{"full_name": "Asanteman Staff"}',
@@ -195,14 +195,14 @@ ON CONFLICT (branch_id, receipt_type) DO NOTHING;
 -- 
 -- SUPER ADMIN:
 --   Email: admin@mortuary.com
---   Password: Admin@123
+--   Password: replace the CHANGE_ME values below before running; never commit real passwords
 -- 
 -- ASUOM STAFF:
 --   Email: asuom.staff@amprahmortuary.com
---   Password: AsuomStaff@2026
+--   Password: replace the CHANGE_ME values below before running; never commit real passwords
 --
 -- ASANTEMAN STAFF:
 --   Email: asanteman.staff@amprahmortuary.com
---   Password: AsantemanStaff@2026
+--   Password: replace the CHANGE_ME values below before running; never commit real passwords
 -- 
 -- =============================================

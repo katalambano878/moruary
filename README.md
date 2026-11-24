@@ -124,11 +124,11 @@ After running the seed data:
 
 **Super Admin:**
 - Email: `admin@mortuary.com`
-- Password: `Admin@123`
+- Password: set when you run the seed (never publish it)
 
 **Staff:**
 - Email: `staff@mortuary.com`
-- Password: `Staff@123`
+- Password: set when you run the seed (never publish it)
 
 ## Deployment
 

@@ -59,7 +59,10 @@ export function NewEmployeeForm({ branchId, salaryStructures }: NewEmployeeFormP
                 toast.error(result.error)
             } else {
                 toast.success('Employee created successfully', {
-                    description: 'The user account has been created.'
+                    description: result.tempPassword
+                        ? `One-time password: ${result.tempPassword} (shown once; share it privately and ask them to change it)`
+                        : 'The user account has been created.',
+                    duration: 60000
                 })
                 router.push(`/dashboard/${branchId}/hr`)
             }
