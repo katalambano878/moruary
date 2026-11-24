@@ -26,7 +26,7 @@ DELETE FROM branches WHERE code = 'TAK';
 -- STEP 3: CREATE ASUOM STAFF USER
 -- ==========================================
 -- Email: asuom.staff@amprahmortuary.com
--- Password: AsuomStaff@2026
+-- Password: replace the CHANGE_ME values below before running; never commit real passwords
 
 INSERT INTO auth.users (
   id,
@@ -49,7 +49,7 @@ INSERT INTO auth.users (
   'cccccccc-cccc-cccc-cccc-cccccccccccc',
   '00000000-0000-0000-0000-000000000000',
   'asuom.staff@amprahmortuary.com',
-  crypt('AsuomStaff@2026', gen_salt('bf')),
+  crypt('CHANGE_ME_1', gen_salt('bf')),
   NOW(),
   NOW(),
   NOW(),
@@ -85,7 +85,7 @@ ON CONFLICT (user_id, branch_id) DO NOTHING;
 -- STEP 4: CREATE ASANTEMAN STAFF USER
 -- ==========================================
 -- Email: asanteman.staff@amprahmortuary.com
--- Password: AsantemanStaff@2026
+-- Password: replace the CHANGE_ME values below before running; never commit real passwords
 
 INSERT INTO auth.users (
   id,
@@ -108,7 +108,7 @@ INSERT INTO auth.users (
   'dddddddd-dddd-dddd-dddd-dddddddddddd',
   '00000000-0000-0000-0000-000000000000',
   'asanteman.staff@amprahmortuary.com',
-  crypt('AsantemanStaff@2026', gen_salt('bf')),
+  crypt('CHANGE_ME_2', gen_salt('bf')),
   NOW(),
   NOW(),
   NOW(),
@@ -148,12 +148,12 @@ ON CONFLICT (user_id, branch_id) DO NOTHING;
 --
 -- ASUOM STAFF:
 --   Email: asuom.staff@amprahmortuary.com
---   Password: AsuomStaff@2026
+--   Password: replace the CHANGE_ME values below before running; never commit real passwords
 --   Branch: Asuom (auto-redirects on login)
 --
 -- ASANTEMAN STAFF:
 --   Email: asanteman.staff@amprahmortuary.com
---   Password: AsantemanStaff@2026
+--   Password: replace the CHANGE_ME values below before running; never commit real passwords
 --   Branch: Asanteman (auto-redirects on login)
 --
 -- =============================================
